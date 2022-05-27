@@ -7,6 +7,7 @@
     --header-links-text-color: #E5E7EB;
 
     --sing-up-btn-bg-color: #3882F6;
+    --forth-section-bg-color: #3882F6;
 
     --quote-section-bg-color: #E5E7EB;
     --quote-text-color: #1F2937;
@@ -26,6 +27,10 @@ body {
 section {
     display: flex;
     justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 li {
@@ -94,6 +99,7 @@ img {
 
 .logo {
     font-size: 24px;
+    color: var(--white-text-color);
 }
 
 /* I added the same styles for the header links and the paragraph that's inside the fist section */
@@ -157,7 +163,7 @@ img {
 }
 
 
-/* <!-- ------------------------------------------- SECOND SECTION ------------------------------------------- --> */
+/* <!-- ------------------------------------------- THIRD SECTION ------------------------------------------- --> */
 .third-section {
     background-color: var(--quote-section-bg-color);
     color: var(--quote-text-color);
@@ -183,4 +189,44 @@ img {
 
     font-style: normal;
     font-size: 24px;
+}
+
+/* <!-- ------------------------------------------- FORTH SECTION ------------------------------------------- --> */
+.forth-section {
+    padding: 100px;
+    color: var(--white-text-color);
+}
+
+.forth-section-container {
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--forth-section-bg-color);
+    border-radius: 10px;
+    padding: 50px 180px;
+}
+
+.forth-section-paragraph {
+    opacity: 0.8;
+}
+
+.forth-section-btn {
+    border: 3px white solid;
+}
+
+/* <!-- ------------------------------------------- FIFTH SECTION ------------------------------------------- --> */
+.fifth-section {
+    background-color: var(--fifth-section-bg-color);
+    color: var(--white-text-color);
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 0;
+}
+
+.copyright {
+    opacity: 0.8;
 }
