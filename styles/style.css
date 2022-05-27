@@ -38,7 +38,7 @@ a {
 
 /* UTILITY CLASSES */
 .max-width {
-    width: 80%;
+    width: 1200px;
 }
 
 .display-flex {
@@ -47,6 +47,27 @@ a {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+/* my-10 from margin on Y axis of 10px */
+.my-10 {
+    margin: 10px 0;
+}
+
+.my-30 {
+    margin: 40px 0;
+}
+
+.sign-up-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    background-color: var(--sing-up-btn-bg-color);
+    color: var(--white-text-color);
 }
 
 /* <!-- ------------------------------------------- FIRST SECTION ------------------------------------------- --> */
@@ -58,11 +79,17 @@ a {
 
 header {
     justify-content: space-between;
+    margin: 20px 0;
+}
+
+img {
+    width: 600px;
+    height: 300px;
 }
 
 .header-list {
     width: 500px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .logo {
@@ -74,10 +101,86 @@ header {
 .paragraph-inside-first-section {
     color: var(--header-links-text-color);
     font-size: 18px;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .title-inside-first-section {
     font-size: 48px;
     font-weight: 900;
+}
+
+.text-container {
+    padding-right: 100px;
+}
+
+.text-inside-first-section-container {
+    margin: 100px 0;
+}
+
+/* <!-- ------------------------------------------- SECOND SECTION ------------------------------------------- --> */
+.second-section-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section-title {
+    font-size: 36px;
+    color: var(--darker-text-color);
+    font-weight: 900;
+}
+
+.boxes-container {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    border: var(--sing-up-btn-bg-color) 4px solid;
+    border-radius: 10px;
+}
+
+.box-description {
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    text-align: center;
+    width: 150px;
+}
+
+
+/* <!-- ------------------------------------------- SECOND SECTION ------------------------------------------- --> */
+.third-section {
+    background-color: var(--quote-section-bg-color);
+    color: var(--quote-text-color);
+    font-size: 36px;
+    font-style: italic;
+}
+
+.third-section-container {
+    width: 72%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    padding: 120px 0;
+}
+
+.customer-name {
+    /* I used width 90% so the text take almost the netire row so text aling end works */
+    width: 90%;
+    text-align: end;
+
+    font-style: normal;
+    font-size: 24px;
 }
